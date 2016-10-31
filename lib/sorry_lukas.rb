@@ -8,7 +8,9 @@ module SorryLukas
     end
 
     def say
-      `say #{@excuse_list.sample}`
+      saying = @excuse_list.sample
+      `say #{saying}`
+      saying
     end
   end
 end
